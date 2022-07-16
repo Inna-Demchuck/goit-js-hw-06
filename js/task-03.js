@@ -25,7 +25,7 @@ const images = [{
 
 
 const list = document.querySelector("ul");
-const imageList = (images) => images.reduce((acc, image) => acc + `<li class = "item"><img alt = "${image.alt}" url = "${image.url}" width = "150" height = "100" /></li>`, "");
+const imageList = (images) => images.reduce((acc, image) => acc + `<li class = "item"><img alt = "${image.alt}" src = "${image.url}" width = "150" height = "100" /></li>`, "");
 list.insertAdjacentHTML("beforeend", imageList(images));
 list.setAttribute("style", "list-style:none; display: flex;");
 console.log(imageList(images));
